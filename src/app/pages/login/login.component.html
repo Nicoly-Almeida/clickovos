@@ -1,0 +1,29 @@
+<div class="login">
+    <div style="background: #F2D335; display: flex; justify-content: center; width: 40%; align-items: center">
+        <img src="/assets/img/ovosvaldo.png" width="70%" height="80%"/>
+    </div>
+    <div style="display: flex; align-items: center; width: 60%; flex-direction: column; margin-top: 80px;">
+        <div class="w-75">
+            <h2 class="logo">ClickOvos</h2>
+            <h1 class="bem_vindo">Bem vindo de volta</h1>
+            <form #form="ngForm">
+                <mat-form-field appearance="outline" style="width:80%">
+                    <mat-label>Email</mat-label>
+                    <input matInput [formControl]="login.email" type="email">
+                    <mat-error *ngIf="login.email.invalid">{{getErrorEmailMessage()}}</mat-error>
+                </mat-form-field>
+  
+                <mat-form-field appearance="outline" class="w-100 pb-0 mb-0" style="width:80%">
+                    <mat-label>Senha</mat-label>
+                    <input matInput [formControl]="login.senha" [type]="hide ? 'password' : 'text'">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="login.senha.invalid">{{getErrorSenhaMessage()}}</mat-error>
+                </mat-form-field>
+                <p routerLink="/cadastro" style="cursor:pointer">Ainda não possui uma conta?        <span class="ml-5">Cadastre-se</span></p>
+                <button class="primary_button w-100" (click)="auth()" type="submit" [disabled]="!formValid()">Entrar</button>
+            </form>
+        </div>
+    </div>
+</div>

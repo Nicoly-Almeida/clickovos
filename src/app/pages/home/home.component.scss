@@ -1,0 +1,134 @@
+.newsletter{
+    background-image: url("../../../assets/img/newsletter.png");
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: space-between;
+    padding-left: 135px;
+    padding-right: 135px;
+}
+
+.session_title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 96px;
+    color: #07484A;
+    text-align: center;
+}
+
+.conjunto_cards{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 50px;
+    display: flex;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+.produtos_populares{
+    background-image: url("../../../assets/img/produtos_populares.svg");
+    width: 100%;
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 20%;
+    margin-right: 32px;
+}
+
+.card_title{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    color: #07484A;
+}
+
+.old_price{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration-line: line-through;
+
+    color: #979797;
+}
+
+.new_price{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #E8BB2A;
+}
+
+.card_subtitle{
+    justify-content: space-evenly;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.background{
+    background: #E8BB2A;
+    height: 10px;
+}
+
+p{
+    margin: 0px;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    letter-spacing: 0.05em;
+    color: #07484A;
+}
+
+.subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #07484A;
+    padding-top: 16px;
+}
+
+input{
+    background: rgba(255, 255, 255, 0.49);
+    border-radius: 10px;
+    padding: 16px 0px 16px 20px;
+    border: none;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+button{
+    background: #BA4520;
+    border-radius: 10px;
+    padding: 8px 40px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 33px;
+    color: #FDFBF8;
+}

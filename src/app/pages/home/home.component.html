@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<app-header></app-header>
+
+<div class="produtos_populares">
+    <h1 class="session_title">Produtos populares</h1>
+    <div class="conjunto_cards">
+        <div class="card" *ngFor="let product of products">
+            <img src="{{product.picture}}" width="100%">
+            <div class="background"></div>
+            <p class="card_title">{{product.name}}</p>
+            <div class="card_subtitle">
+                <p class="old_price">R$ {{product.price}},00</p>
+                <p class="new_price">R$ {{valueDiscount(product.price, product.discount)}}0</p>
+            </div>
+            
+            <button style="margin-right: 20px; margin-left: 20px; padding-left: 20px; cursor:pointer; padding-right: 20px; margin-bottom: 20px;" (click)="addStock(product)">Adicionar ao estoque</button>
+        </div>
+    </div>
+</div>
+
+<div class="newsletter">
+    <div></div>
+    <div>
+        <p class="title">Junte-se a nossa</p>
+        <p class="title"><strong>Newsletter</strong></p>
+        <p class="subtitle">Receba ofertas exclusivas, descontos e muitas ofertas.</p>
+
+        <div>
+            <input placeholder="Digite seu email"/>
+        </div>
+        <button>Inscreva-se</button>
+    </div>
+</div>
+
+<app-footer></app-footer>

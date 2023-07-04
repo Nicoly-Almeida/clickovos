@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<div style="margin: 30px;">
+    <div style="margin-bottom: 40px; display: flex;" *ngFor="let product of stock">
+        <img src="{{product.picture}}" width="100px" style="margin-right: 20px;"> 
+        <div>
+            <p>{{product.name}}</p>
+            <p>R$ {{valueDiscount(product.price, product.discount)}}0</p>
+        </div>
+    </div>
+</div>
+<div style="display:flex; justify-content: flex-end; margin-right: 30px;">
+    <h1>Total: {{totalProducts()}}</h1>
+    <button style="margin-left: 30px;">Finalizar compra</button>
+</div>

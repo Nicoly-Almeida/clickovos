@@ -1,0 +1,46 @@
+.header{
+    background: linear-gradient(129.23deg, #FFD420 33.24%, rgba(255, 217, 59, 0.44) 90.24%);
+    border-radius: 0px 0px 62px 62px;
+}
+
+p{
+    margin: 0px;
+}
+
+.subtitle{
+    margin-top: 24px;
+    margin-bottom: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+
+    color: #07484A;
+}
+
+button{
+    background: #BA4520;
+    border-radius: 10px;
+    padding: 8px 24px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #FDFBF8;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 123.5%;
+    /* or 69px */
+    color: #07484A;
+}

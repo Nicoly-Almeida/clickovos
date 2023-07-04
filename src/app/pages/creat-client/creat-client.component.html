@@ -1,0 +1,49 @@
+<div>
+    <form class="example-form mx-5 mt-5">
+        <h1 class="center cadastro mb-5" style="text-align: center;">Cadastro de usuário</h1>
+        <div style="display:flex;flex-direction: column; align-items: center;">
+        <mat-form-field  appearance="outline" style="width: 50%;">
+            <mat-label>Nome</mat-label>
+            <input matInput [(ngModel)]="client.name" name="name"><br>
+        </mat-form-field>
+        <mat-form-field  appearance="outline" style="width: 50%;">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="client.email" name="email"><br>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 50%;" >
+            <mat-label>Celular</mat-label>
+            <input matInput [(ngModel)]="client.phone_number" name="phone_number"><br>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 50%;" >
+            <mat-label>Cidade</mat-label>
+            <input matInput [(ngModel)]="client.city" name="city"><br>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label >Bairro</mat-label>
+            <input matInput [(ngModel)]="client.neighborhood" name="neighborhood"><br>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label >Rua</mat-label>
+            <input matInput [(ngModel)]="client.street" name="street"><br>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 50%;">
+            <mat-label >Número</mat-label>
+            <input matInput [(ngModel)]="client.number" name="number"><br>
+        </mat-form-field>
+        <div style="width: 50%;">
+            <mat-form-field appearance="outline" style="width: 100%;">
+                <mat-label >Password</mat-label>
+                <input matInput [(ngModel)]="client.password" name="password"><br>
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="width: 100%;">
+                <mat-label >Repita a senha</mat-label>
+                <input matInput [(ngModel)]="client.repeat_password" name="repeat_password"><br>
+            </mat-form-field>
+        </div>
+    </div>
+    <div style="display:flex; justify-content: center">
+        <button (click)="inserirUsuario()">Cadastrar</button>
+    </div>
+    
+    </form>
+</div>
